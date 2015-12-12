@@ -1,0 +1,27 @@
+From 11668069380a02cc21cdd1030b28b365c14d4141 Mon Sep 17 00:00:00 2001
+From: Igor Gnatenko <i.gnatenko.brain@gmail.com>
+Date: Sat, 12 Dec 2015 18:40:03 +0100
+Subject: [PATCH] link against libsvm due to system TIPL
+
+Signed-off-by: Igor Gnatenko <i.gnatenko.brain@gmail.com>
+---
+ dsi_studio.pro | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+diff --git a/dsi_studio.pro b/dsi_studio.pro
+index 2507c30..47eb2c9 100644
+--- a/dsi_studio.pro
++++ b/dsi_studio.pro
+@@ -19,7 +19,8 @@ QMAKE_CXXFLAGS += -fpermissive
+ LIBS += -lboost_thread \
+         -lboost_program_options \
+         -lGLU \
+-        -lz
++        -lz \
++        -lsvm
+ }
+ 
+ mac{
+-- 
+2.6.4
+
